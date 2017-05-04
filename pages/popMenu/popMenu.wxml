@@ -1,0 +1,6 @@
+<view>
+  <image src="/images/agree.png" class="img-style" animation="{{animCollect}}" bindtap="collect"></image>
+  <image src="/images/help.png" class="img-style" animation="{{animTranspond}}" bindtap="transpond"></image>
+  <image src="/images/home.png" class="img-style" animation="{{animInput}}" bindtap="input"></image>
+  <image src="/images/plus.png" class="img-plus-style" animation="{{animPlus}}" bindtap="plus"></image>
+</view>

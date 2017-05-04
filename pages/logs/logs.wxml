@@ -1,0 +1,7 @@
+
+<!--logs.wxml-->
+<view class="container log-list">
+  <block>
+    <text class="log-item">{{msg}}</text>
+  </block>
+</view>

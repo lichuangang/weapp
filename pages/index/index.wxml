@@ -1,0 +1,24 @@
+<import src="items.wxml" />
+<!--index.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">各种坑爹</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">福利爆满</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">培训学校</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 40}}px" bindchange="bindChange">
+
+  <!-- 坑爹公司 -->
+  <swiper-item>
+    <template is="items" data="{{companys:badList}}"></template>
+  </swiper-item>
+
+  <!-- 福利公司 -->
+  <swiper-item>
+    <template is="items" data="{{companys:goodList}}"></template>
+  </swiper-item>
+
+  <!-- 培训学校 -->
+  <swiper-item>
+    <template is="items" data="{{companys:schoolList}}"></template>
+  </swiper-item>
+</swiper>

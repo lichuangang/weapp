@@ -1,0 +1,27 @@
+
+<!--pages/info/info.wxml-->
+<view class="content">
+  <text>
+    {{company.desc}}
+  </text>
+  <view class="address" style="display:flex;">
+    <view>
+      {{company.address}}
+    </view>
+  </view>
+  <button class="btn ok" bindtap="agree" formType="submit">（{{company.agree}}）</button>
+  <view class="commentGrid">
+    <view class="commentInfo" wx:for="{{comments}}" wx:key="item">
+      <view class="cm_title">{{item.content}}</view>
+      <view class="cm_time">{{item.create_time}}</view>
+    </view>
+  </view>
+  <view class="empt">
+  </view>
+</view>
+<view class="toolBar">
+  <view class="options" style="display:flex;">    
+    <input class="cm_txt" name="companyAddress" placeholder="写评论..." maxlength="200" value="{{commentTxt}}" bindblur="bindChange" />
+    <button class="btn comment" bindtap="pubcomment" formType="button">评论</button>
+  </view>
+</view>

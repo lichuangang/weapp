@@ -1,0 +1,46 @@
+.main_form{
+    font-size: 16px;
+}
+
+.form_row{
+    /*换行*/
+     display: block;
+     padding: 10px;
+     font-size: 16px;
+}
+
+.form_group{
+    padding:3px;
+}
+
+.txt_title{
+    margin: 10px;
+    font-size: 16px;
+}
+
+.title{
+    border: 1rpx solid lightgrey;
+    border-radius: 5px;  
+    font-size: 16px;  
+}
+
+.desc{
+    border: 1rpx solid lightgrey;
+    border-radius: 5px;   
+    height: 90px;
+    font-size: 16px;
+}
+
+.button{
+    width: 45%;
+    height: 40px;
+    line-height: 35px;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+.submit{
+    background-color: #18b4ed;
+    color: white;
+    margin-top: 15px;
+}

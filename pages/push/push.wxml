@@ -1,0 +1,27 @@
+<form class="main_form" style="">
+  <text class="txt_title">公司名称：</text>
+  <view class="form_row">
+    <input class="form_group title" name="companyName" placeholder="请输入公司名称" maxlength="50" value="{{name}}" bindinput="bindName" />
+  </view>
+  <text class="txt_title">描述信息：</text>
+  <view class="form_row">
+    <textarea class="form_group desc" maxlength="400" bindblur="bindDesc"  placeholder="请输入描述信息" style="width:{{winWidth - 30}}px" value="{{desc}}">
+    </textarea>
+  </view>
+  <text class="txt_title">公司地址：</text>
+  <view class="form_row">
+    <input bindinput="bindAddress" class="form_group title" name="companyAddress" placeholder="请输入公司地址" maxlength="200" value="{{address}}" />
+  </view>
+  <view class="form_row">
+    <radio-group bindchange="bindType">
+      <!--label通常与radio和checkbox结合使用-->
+      <label style="" wx:for-items="{{array}}" wx:key="item">
+        <radio value="{{item.value}}" checked="{{item.value == cType}}" />{{item.name}}
+      </label>
+    </radio-group>
+  </view>
+  <view style="display:flex;">
+    <button class="button submit" bindtap="save" formType="submit">提交</button>
+  </view>
+  <view style="height:45px;"></view>
+</form>

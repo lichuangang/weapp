@@ -1,0 +1,40 @@
+{
+  "pages": [    
+    "pages/index/index",
+    "pages/push/push",
+    "pages/popMenu/popMenu",    
+    "pages/info/info",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "重庆求职防坑手册",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#00a5e0",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/home.png",
+        "iconPath": "images/home_1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/push.png",
+        "iconPath": "images/push_1.png",
+        "pagePath": "pages/push/push",
+        "text": "发布"
+      },
+      {
+        "selectedIconPath": "images/help.png",
+        "iconPath": "images/help_1.png",
+        "pagePath": "pages/logs/logs",
+        "text": "关于"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+
+<!-- A.wxml -->
+<template name="items">
+  <scroll-view class="recommend_scroll_x_box" scroll-y="true">
+    <view class="recommend_hot_box" wx:for="{{companys}}" bindtap="showInfo" wx:key="item" data-company="{{item}}" >
+       <view class="floatAgree">
+      {{item.agree}}
+      </view>
+      <text class="recommend_hot_box_title">{{item.name}} </text>
+      <text class="recommend_hot_box_desc">{{item.desc}}</text>
+    </view>
+  </scroll-view>
+</template>
